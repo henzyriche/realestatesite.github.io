@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"              content="Henry">
+    <meta name="description"         content="Real Estate Website">
+    <meta name="keywords"            content="estate + building + website + housing">
+    <title>civilians.co</title>
+
+    <!-- Linking Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+     <!-- Include Swiper CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!--Adding Custom Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+   
+
+     <!----creating icon----->
+     <link href="./images/pathfinder-fotor-bg-remover-20230523214440.png" rel="icon">
+    
+     <!-----Linking font awesome------>
+     <link rel="stylesheet" href="./fonts/css/all.css">
+     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+     
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT US 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">About Company</a>
+                <a href="#">FAQ's</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">View all Services</a>
+                <a href="#">Concept Designs</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECTS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">View 1</a>
+                <a href="#">View 2</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">BLOG 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Grid</a>
+                <a href="#">Single Post</a>
+            </div>
+        </div>
+        <a href="#">CONTACT</a>
+    </nav>
+
+    <section class="content1">
+        <div class="animation-container">
+            <div class="slide">
+                <div class="slide-text">
+                <h1 class="slideheader">Crafted better</h1>
+                <p>Our power of choice is untrammelled and when nothing prevents<br> our being able to do what we like best</p>
+                <button class="about-btn"><a href="#">About Company <i class="fa-solid fa-square-arrow-up-right"></i></a></button>
+            </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                    <h1 class="slideheader">Decorate ideas</h1>
+                    <p>Our power of choice is untrammelled and when nothing prevents<br> our being able to do what we like best</p>
+                    <button class="about-btn"><a href="#">About Company <i class="fa-solid fa-square-arrow-up-right"></i></a></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                    <h1 class="slideheader">Well invented</h1>
+                    <p>Our power of choice is untrammelled and when nothing prevents<br> our being able to do what we like best</p>
+                    <button class="about-btn"><a href="#">About Company <i class="fa-solid fa-square-arrow-up-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+        
+
+    <script>
+        // JavaScript can be used to add animations and interactivity.
+        let currentSlide = 1;
+        const totalSlides = 3;
+    
+        function changeSlide() {
+            document.querySelector('.animation-container').classList.remove(`active-slide-${currentSlide}`);
+            currentSlide = (currentSlide % totalSlides) + 1;
+            document.querySelector('.animation-container').classList.add(`active-slide-${currentSlide}`);
+            setTimeout(() => {
+                animateText(); // Trigger text animation when slide changes
+            }, 500); // Delay text animation slightly after slide transition
+            setTimeout(changeSlide, 5000); // Change slide every 5 seconds
+        }
+    
+        // Text animation function
+        function animateText() {
+            const text = document.querySelector('.active-slide-' + currentSlide + ' .slide h1');
+            text.style.animation = 'textFadeIn 2s forwards';
+        }
+    
+        // Start the animation
+        changeSlide();
+    </script>
+        
+    </section>
+
+    <section class="content2">
+        <div class="logos">
+        <div class="logo-container">
+            <img src="./images/logo1-fotor-bg-remover-202310067444.png" alt="Image 1">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo2-fotor-bg-remover-20231006752.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo3-fotor-bg-remover-202310067525.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo4-fotor-bg-remover-202310067553.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo5-fotor-bg-remover-202310067620.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo6-fotor-bg-remover-202310067642.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo7-fotor-bg-remover-20231006770.png" alt="Image 2">
+        </div>
+        <div class="logo-container">
+            <img src="./images/logo8-fotor-bg-remover-202310067716.png" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="logo-text">
+        <p>Expert in luxury real estate development<br>in Ghana</p>
+        <br>
+        <span>Are you seeking a property in Mauritius?<br> 
+            Explore a range of luxurious freehold properties for sale in the Northern region, provided by Evaco Property.<br> 
+            Experience an ideal blend of quality living, real estate investment opportunities, and tax optimization.<br>  
+            Unearth the lifestyle that perfectly complements your desires.</span><br>
+       <button class="logo-btn"><a href="#">Book an appointment with our sales expert</a></button> 
+    </div>
+    </section>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/estate1.avif" id="swipe-img">
+                <h1>La Bawaleshie 
+                    <i class="fa-solid fa-star" id="star"></i>
+                    <i class="fa-solid fa-star" id="star"></i>
+                    <i class="fa-solid fa-star" id="star"></i>
+                    <i class="fa-solid fa-star" id="star"></i>
+                    <i class="fa-regular fa-star-half-stroke" id="star"></i></h1>
+                <p>55 WW Madison St, </p>
+                <p>American House, IL 60661</p>
+                <p>Studio - 2 Beds | $1,535 - $4,540</p>
+        </div>
+          <div class="swiper-slide">
+            <img src="./images/estate2.avif" id="swipe-img">
+            <h1>East Legon 
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i></h1>
+            <p>90 W Altgeld St, </p>
+            <p>American House, IL 60661</p>
+            <p>Studio - 3 Beds | $1,985 - $14,515</p>
+        </div>
+          <div class="swiper-slide">
+            <img src="./images/estate3.avif" id="swipe-img">
+            <h1>Lakeside 
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-regular fa-star-half-stroke" id="star"></i>
+                <i class="fa-regular fa-star" id="star"></i></h1>
+            <p>Greater Accra, </p>
+            <p>American House, IL 60661</p>
+            <p>Studio - 2b Beds | USD 40,000 - $80,515</p>
+        </div>
+          <div class="swiper-slide">
+            <img src="./images/estate4.avif" id="swipe-img">
+            <h1>Ashaley Botwe 
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-regular fa-star-half-stroke" id="star"></i>
+                <i class="fa-regular fa-star" id="star"></i></h1>
+            <p>Greater Accra, </p>
+            <p>American House, IL 60661</p>
+            <p>Studio - 2b Beds | USD 40,000 - $80,515</p>
+        </div>
+          <div class="swiper-slide">
+            <img src="./images/estate5.avif" id="swipe-img">
+            <h1>Community 18 
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-regular fa-star-half-stroke" id="star"></i>
+                <i class="fa-regular fa-star" id="star"></i></h1>
+            <p>Greater Accra, </p>
+            <p>American House, IL 60661</p>
+            <p>Studio - 2b Beds | USD 40,000 - $80,515</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="./images/estate6.jpeg" id="swipe-img">
+            <h1>Airpot Hills
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-solid fa-star" id="star"></i>
+                <i class="fa-regular fa-star-half-stroke" id="star"></i>
+                <i class="fa-regular fa-star" id="star"></i></h1>
+            <p>Greater Accra, </p>
+            <p>American House, IL 60661</p>
+            <p>Studio - 2b Beds | USD 40,000 - $80,515</p>
+        </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+     <script src="Js/script.js">
+
+     </script>
+
+
+<section class="content4">
+    <div class="content4-text">
+    <h2>Our Services</h2>
+    <p>Our real estate company provides a range of services, including buying and selling of properties, property valuation, management
+        and online property listing. We're committed to delivering a seamless real estate experience with professionalism and integrity. 
+    </p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-icon">
+               <img src="./images/Buying and Selling icon.png" class="service-icons">
+            </div>
+            <div class="card-text">
+            <h2>Buying & Selling</h2>
+            <p>Facilitating the purchase and sale of residential, commercial, and investment properties.</p>
+            <a href="#">Read More</a>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="./images/Buying and Selling icon.png" class="service-icons">
+             </div>
+             <div class="card-text">
+             <h2>Real Estate Consultation</h2>
+             <p>Offering expert advise on real estate investments, market trends,  and property selection.</p>
+             <a href="#">Read More</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="./images/Buying and Selling icon.png" class="service-icons">
+             </div>
+             <div class="card-text">
+             <h2>Property Management</h2>
+             <p>Managing and overseeing rental properties on behalf of property owners, including tenant screening.</p>
+             <a href="#">Read More</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="./images/Buying and Selling icon.png" class="service-icons">
+             </div>
+             <div class="card-text">
+             <h2>Lease & Rental Services</h2>
+             <p>Assisting clients and leasing rental properties, including apartments homes.</p>
+             <a href="#">Read More</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="./images/Buying and Selling icon.png" class="service-icons">
+             </div>
+             <div class="card-text">
+             <h2>Real Estate Marketing</h2>
+             <p>Developing marketing strategies and materials to promote properties effectively.</p>
+             <a href="#">Read More</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="./images/Buying and Selling icon.png" class="service-icons">
+             </div>
+             <div class="card-text">
+             <h2>Real Estate Investment Advice</h2>
+             <p>Advising clients on investement opportunities and strategies for real estate portflios.</p>
+             <a href="#">Read More</a>
+         </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

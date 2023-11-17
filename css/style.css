@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'san serif';
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #0E5C86;
+    font-family: 'Montserrat', sans-serif;
+    overflow: fixed;
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content1{
+  width: 100%;
+  height: 650px; 
+}
+.animation-container {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: left 3s ease-in-out;
+}
+
+.slide:nth-child(1) {
+    background-image:linear-gradient(rgba(0,0,0.5),#2f2f2f14),url('../images/house2.jpeg');
+}
+
+.slide:nth-child(2) {
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2),#000), url('../images/apartment1.png');
+}
+
+.slide:nth-child(3) {
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2),#000), url('../images/Livingroom1.psd');
+}
+
+/* Animation to move between slides */
+.animation-container.active-slide-1 .slide:nth-child(1),
+.animation-container.active-slide-2 .slide:nth-child(2),
+.animation-container.active-slide-3 .slide:nth-child(3) {
+    left: 0;
+}
+.slide-text{
+    width: 50%;
+    height: 250px;
+    color: #fff;
+    padding: 50px;
+    margin-left: 5%;
+}
+
+.slideheader{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 10%;
+}
+.slide-text p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+.about-btn{
+    padding: 15px 20px;
+    background: #E2F0D3;
+    border: none;
+    margin-top: 5%;
+    margin-left: 10%;
+    transition: .5s;
+}
+.about-btn a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+.about-btn:hover{
+    transition: .5s;
+    translate: 10%;
+}
+
+.content2 {
+    width: 100%;
+    height: 500px;
+}
+
+.logos{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.logo-container img {
+   width: 80%;
+   height: auto;
+}
+.logo-text {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.logo-text p{
+    font-family: 'Montserrat', 'san-serif';
+    font-size: 28px;
+}
+.logo-text span{
+    font-family: 'Montserrat', 'san-serif';
+}
+.logo-btn {
+    margin-top: 2%;
+    padding: 10px 55px;
+    background: transparent;
+    border: 1px solid #DD8C58;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.logo-btn a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+}
+.logo-btn:hover{
+    transition: .6s;
+    border: none;
+    background: #DD8C5C;
+}
+.logo-btn a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 280px){
+    .content1{
+        height: 550px; 
+      }
+      .animation-container {
+          height: 550px;
+      }
+
+      .slide-text{
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+        margin-left: 0%;
+    }
+    
+    .slideheader{
+        font-size: 20px;
+    }
+    .slide-text p{
+        font-size: 15px;
+    }
+    .about-btn{
+        padding: 10px 10px;
+    }
+    .about-btn a{
+        font-size: 12px;
+    }
+
+    .content2 {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .logos{
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        margin-left: 0%;
+    }
+    .logo-text {
+        width: 100%;
+        height: 320px;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .logo-text p{
+        font-size: 18px;
+    }
+    .logo-text span{
+        font-size: 13px;
+    }
+    .logo-btn {
+        margin-top: 5%;
+        padding: 3px 8px;
+    }
+    .logo-btn a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content1{
+        height: 550px; 
+      }
+      .animation-container {
+          height: 550px;
+      }
+
+      .slide-text{
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+        margin-left: 0%;
+    }
+    
+    .slideheader{
+        font-size: 20px;
+    }
+    .slide-text p{
+        font-size: 15px;
+    }
+    .about-btn{
+        padding: 10px 10px;
+    }
+    .about-btn a{
+        font-size: 12px;
+    }
+
+    .content2 {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .logos{
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        margin-left: 0%;
+    }
+    .logo-text {
+        width: 100%;
+        height: 320px;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .logo-text p{
+        font-size: 18px;
+    }
+    .logo-text span{
+        font-size: 13px;
+    }
+    .logo-btn {
+        margin-top: 5%;
+        padding: 3px 8px;
+    }
+    .logo-btn a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 420px){
+    .content1{
+        height: 550px; 
+      }
+      .animation-container {
+          height: 550px;
+      }
+
+      .slide-text{
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+        margin-left: 0%;
+    }
+    
+    .slideheader{
+        font-size: 20px;
+    }
+    .slide-text p{
+        font-size: 15px;
+    }
+    .about-btn{
+        padding: 10px 10px;
+    }
+    .about-btn a{
+        font-size: 12px;
+    }
+
+    .content2 {
+        width: 100%;
+        height: 360px;
+    }
+    
+    .logos{
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        margin-left: 0%;
+    }
+    .logo-text {
+        width: 100%;
+        height: 280px;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .logo-text p{
+        font-size: 18px;
+    }
+    .logo-text span{
+        font-size: 13px;
+    }
+    .logo-btn {
+        margin-top: 5%;
+        padding: 10px 25px;
+    }
+    .logo-btn a{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content1{
+        height: 550px; 
+      }
+      .animation-container {
+          height: 550px;
+      }
+
+      .slide-text{
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+        margin-left: 0%;
+    }
+    
+    .slideheader{
+        font-size: 20px;
+    }
+    .slide-text p{
+        font-size: 15px;
+    }
+    .about-btn{
+        padding: 10px 10px;
+    }
+    .about-btn a{
+        font-size: 12px;
+    }
+
+    .content2 {
+        width: 100%;
+        height: 360px;
+    }
+    
+    .logos{
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        margin-left: 0%;
+    }
+    .logo-text {
+        width: 100%;
+        height: 280px;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .logo-text p{
+        font-size: 18px;
+    }
+    .logo-text span{
+        font-size: 13px;
+    }
+    .logo-btn {
+        margin-top: 5%;
+        padding: 10px 25px;
+    }
+    .logo-btn a{
+        font-size: 13px;
+    }
+}
+
+.swiper {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      padding: 10px;
+      background: rgb(221, 221, 221);
+    }
+
+    .swiper-slide {
+      max-width: 100%;
+      max-height: 95%;
+      text-align: left;
+      font-size: 18px;
+      background: #fff;
+      border-radius: 5px;
+      margin: 20px;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide h1{
+        font-weight: 500;
+        font-size: 25px;
+        margin-top: 2%;
+        margin: 1.2%;
+     }
+
+     .swiper-slide p{
+        margin: 1.2%;
+     }
+
+     .swiper-slide #star{
+       font-size: 20px;
+       color: #ff5e00;
+     }
+
+     .content4{
+        background-color: #f0f0f0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .content4-text{
+        width: 70%;
+        justify-content: left;
+        padding: 20px;
+    }
+    .content4-text h2{
+       font-weight: 500;
+       font-size: 2em;
+    }
+
+    .content4-text p{
+        font-weight: 500;
+        font-size:18px;
+     }
+    
+    .card-container {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .card {
+        width: 25%;
+        margin: 30px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: left;
+        display: flex;
+    }
+
+    .card-icon {
+        margin-right: 10px;
+        width: 50%;
+        height: 50%;
+    }
+    .service-icons{
+        width: 100%;
+        height: auto;
+    }
